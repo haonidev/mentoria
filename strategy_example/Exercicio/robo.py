@@ -14,5 +14,19 @@ class BaseRobo():
         self.perna_direita = perna_direita
 
         self.hitpont = 10
+ 
+    def bater_com_braco_esquerdo(self, robo):
+        self.bater_com_braco_esquerdo(robo)
+        
 
+    def bater_com_braco_direito(self, robo):
+        self.bater_com_braco_direito(robo)
+        
     
+    def chutar_com_perna_direita(self, robo):
+        self.chutar_com_perna_direita(robo)
+
+
+    def chutar_com_perna_esquerda(self, robo):
+        self.chutar_com_perna_esquerda(robo)
+        
