@@ -1,10 +1,6 @@
 
 
-
-
-
 class ProcessaImagem():
-
 
     def __init__(self, imagem):
         self.imagem = imagem
@@ -19,3 +15,4 @@ class ProcessaImagem():
         print("Processando imagem")
         print("Processando imagem")
         print("Processando imagem")
+        

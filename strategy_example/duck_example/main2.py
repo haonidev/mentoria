@@ -19,28 +19,32 @@ class Tamagoshi:
 
 class GenericTamagoshi():
 
-    def __init__(self, tipo, sleepBehavior, playBehavior, eatBehavior):
+    def __init__(self, tipo, forca , sleepBehavior, playBehavior, eatBehavior):
         self.tipo = tipo
         self.sleepBehavior = sleepBehavior
         self.playBehavior = playBehavior
         self.eatBehavior = eatBehavior
+        self.forca = forca
 
     def sleep(self):
-        self.sleepBehavior()
+        self.sleepBehavior(self.forca)
 
     def play(self):
-        self.playBehavior()
+        self.playBehavior(self.forca)
 
     def eat(self):
-        self.eatBehavior()
+        self.eatBehavior(self.forca)
 
     def reproduce(self, sleepBehavior, playBehavior, eatBehavior):
         return GenericTamagoshi(self.tipo, sleepBehavior, playBehavior, eatBehavior)
 
 
 
-def FantasmaSleepBehavior():
+def FantasmaSleepBehavior(forca):
     print("Fantasma sleeping")
+
+    if forca > 10:
+        print("Mas já acordou!")
 
 def FantasmaPlayBehavior():
     print("Booo!")
