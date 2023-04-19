@@ -4,7 +4,10 @@
 # Criar uma classe de um robo, que possa ser complementada 
 # de acordo com as peça que o dono do robo poderá adiquiri futuramente.
 
-class BaseRobo():
+from abc import ABC, abstractmethod
+
+
+class BaseRobo(ABC):
 
     def __init__(self, Modelo: str, braco_esquerdo: any, braco_direito: any, perna_esquerda: any, perna_direita: any):
         self.Modelo = Modelo
@@ -15,18 +18,19 @@ class BaseRobo():
 
         self.hitpont = 10
  
+    @abstractmethod
     def bater_com_braco_esquerdo(self, robo):
-        self.bater_com_braco_esquerdo(robo)
+        pass
         
-
+    @abstractmethod
     def bater_com_braco_direito(self, robo):
-        self.bater_com_braco_direito(robo)
+        pass
         
-    
+    @abstractmethod
     def chutar_com_perna_direita(self, robo):
-        self.chutar_com_perna_direita(robo)
+        pass
 
-
+    @abstractmethod
     def chutar_com_perna_esquerda(self, robo):
-        self.chutar_com_perna_esquerda(robo)
+        pass
         
