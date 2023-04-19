@@ -54,6 +54,3 @@ class RoboZim(BaseRobo):
         print("Chute de Arpão")
         robo.hitpont -= 1
         
-
-bot = RoboZim(None,None,None,None,None)
-bot.chutar_com_perna_esquerda(bot)
