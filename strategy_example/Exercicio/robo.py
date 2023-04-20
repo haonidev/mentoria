@@ -14,7 +14,7 @@ class BaseRobo(ABC):
         self.perna_esquerda = perna_esquerda
         self.perna_direita = perna_direita
 
-        self.hitpont = 10
+        self.hitpoint = 10
  
     @abstractmethod
     def bater_com_braco_esquerdo(self, robo):
